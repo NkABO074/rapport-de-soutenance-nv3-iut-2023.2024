@@ -133,7 +133,7 @@ Pour assuré la gestion bonne gestion du project, nous allons utiliser le logici
 \end{figure}
 
 \subsection{Planification du project}
-\subsubsection*{Diagramme de cas d'utilisation}
+\subsubsection{Diagramme de cas d'utilisation}
 Dans l'optique d'offire une experience utilisateur cohérante, nous nous devons de representer les diverses intéractions que l'utilisateur aura avec la plate forme. C'est pour cela que nous avons opter pour le diagramme de cas d'utilisation suivant: 
 \begin{figure}[h!]
     \includegraphics[width=0.5\textwidth]{./images/Diagramme_useCase.drawio.png}
@@ -141,6 +141,29 @@ Dans l'optique d'offire une experience utilisateur cohérante, nous nous devons 
     \label{fig:GETDO_UseCaseDiagramm}
 \end{figure}
 
+\subsubsection*{Description textuelle de cas d'utilisation}
+Description textuelle du diagramme de cas d'utilisation
 
+Système: Système de gestion de tâches
+
+Acteurs:
+
+    Utilisateur: Utilise le système pour créer, gérer et suivre ses tâches.
+    Administrateur: Gère les utilisateurs, les paramètres du système et les rapports.
+
+Cas d'utilisation:
+
+    Connexion/Inscription: L'utilisateur se connecte ou crée un compte.
+    Gestion des tâches:
+        L'utilisateur crée, modifie, supprime et organise ses tâches.
+        Le système envoie des notifications (rappels, changements d'état, commentaires).
+    Statistiques des tâches: L'utilisateur génère des rapports (tâches terminées, temps passé, tâches en retard).
+
+Relations:
+
+    Utilisateur: Peut utiliser tous les cas d'utilisation.
+    Administrateur: Peut utiliser tous les cas d'utilisation et générer des statistiques de tâches.
+    Gestion des tâches: Inclut les notifications.
+    Statistiques des tâches: Étend la gestion des tâches.
 
 \end{document}
