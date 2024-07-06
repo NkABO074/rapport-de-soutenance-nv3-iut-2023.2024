@@ -142,28 +142,29 @@ Dans l'optique d'offire une experience utilisateur cohérante, nous nous devons 
 \end{figure}
 
 \subsubsection*{Description textuelle de cas d'utilisation}
-Description textuelle du diagramme de cas d'utilisation
-
 Système: Système de gestion de tâches
 
+
 Acteurs:
-
-    Utilisateur: Utilise le système pour créer, gérer et suivre ses tâches.
-    Administrateur: Gère les utilisateurs, les paramètres du système et les rapports.
-
+\begin{itemize}
+    \item[•]Utilisateur: Utilise le système pour créer, gérer et suivre ses tâches.
+    \item[•]Administrateur: Gère les utilisateurs, les paramètres du système et les rapports.
+\end{itemize}
 Cas d'utilisation:
-
-    Connexion/Inscription: L'utilisateur se connecte ou crée un compte.
-    Gestion des tâches:
+\begin{itemize}
+    \item[•]Connexion/Inscription: L'utilisateur se connecte ou crée un compte.
+    \item[•]Gestion des tâches:
         L'utilisateur crée, modifie, supprime et organise ses tâches.
         Le système envoie des notifications (rappels, changements d'état, commentaires).
-    Statistiques des tâches: L'utilisateur génère des rapports (tâches terminées, temps passé, tâches en retard).
-
+    \item[•]Statistiques des tâches: L'utilisateur génère des rapports (tâches terminées, temps passé, tâches en retard).
+    \item[•] •Notifications: L'utilisateur consulte les notifications envoyer par l'administrateur
+\end{itemize}
 Relations:
-
-    Utilisateur: Peut utiliser tous les cas d'utilisation.
-    Administrateur: Peut utiliser tous les cas d'utilisation et générer des statistiques de tâches.
-    Gestion des tâches: Inclut les notifications.
-    Statistiques des tâches: Étend la gestion des tâches.
+\begin{itemize}
+    \item[•]Utilisateur: Peut utiliser tous les cas d'utilisation.
+    \item[•]Administrateur: Peut envoyer des notifications a l'utilisateur.
+    \item[•]Gestion des tâches: Inclut les notifications.
+    \item[•]Statistiques des tâches: Étend la gestion des tâches.
+\end{itemize}
 
 \end{document}
