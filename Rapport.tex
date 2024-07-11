@@ -107,19 +107,19 @@ FAROTY a un impact positif sur les Camerounais en leur offrant un accès plus fa
 
 Pour mener à bien ce projet, plusieurs outils technologiques ont été utilisés. Voici les principaux :
 \begin{itemize}
-\item[•] IDE : Visual Studio Code a été l'éditeur de choix pour notre project.
-\item[•] Syteme de controle de version : Git.
-\item[•] Langages de Programmation : JavaScript pour front-end(Vue.JS) et FireBase en back-end
+\item IDE : Visual Studio Code a été l'éditeur de choix pour notre project.
+\item Syteme de controle de version : Git.
+\item Langages de Programmation : JavaScript pour front-end(Vue.JS) et FireBase en back-end
 \end{itemize}
 
 \section{Méthode utilisé}
-Comme méthode utiliser, nous avont utiliser la méthode de dévélopement agile SCRUM pour la realisation de ce project. Chaque tâches sont séparé en sprint, et à la fin de chacun d'entre eux, un livrable est fournie. La liste des livrables et de l'application elle meme attendues pour ce project sont:
+Comme méthode utiliser, nous avont opter pour la méthode de dévélopement agile SCRUM et la modelisation UML. Chaque tâches sont séparé en sprint, et à la fin de chacun d'entre eux, un livrable est fournie. La liste des livrables et de l'application elle meme attendues pour ce project sont:
 \begin{itemize}
-  \item[•] L'Application de gestion de tâche GETDO.
-  \item[•] Creation de tâche.
-  \item[•] Vision Board.
-  \item[•] Tableaux de bord et visualisations de données.
-  \item[•] Prise en charge d'un styles de gestion des tâches.
+  \item L'Application de gestion de tâche GETDO.
+  \item Creation de tâche.
+  \item Vision Board.
+  \item Tableaux de bord et visualisations de données.
+  \item Prise en charge d'un styles de gestion des tâches.
 \end{itemize}
 
 \subsection{Mise en place des outils de gestion de project}
@@ -131,39 +131,115 @@ Pour assuré la gestion bonne gestion du project, nous allons utiliser le logici
     \caption{Vue d'ensemble d'une tâche dans un projet Jira}
     \label{fig:jira_project_task}
 \end{figure}
+%---
+\subsection{Conseption du project}
+\subsubsection{Diagramme de cas d'utilisation et description textuelle}
+Dans l'optique d'offire une experience utilisateur cohérante, nous nous devons de representer les diverses intéractions que l'utilisateur aura avec la plate forme. C'est pour cela que nous avons opter pour le diagramme de cas d'utilisation suivant: \\ \\ \\ \\ \\ \\ \\
 
-\subsection{Planification du project}
-\subsubsection{Diagramme de cas d'utilisation}
-Dans l'optique d'offire une experience utilisateur cohérante, nous nous devons de representer les diverses intéractions que l'utilisateur aura avec la plate forme. C'est pour cela que nous avons opter pour le diagramme de cas d'utilisation suivant:\\ \\ \\ \\ \\
+% Use case diagramm screenshot
 \begin{figure}[h!]
     \includegraphics[width=1\textwidth]{./images/Diagramme_useCase.drawio.png}
     \caption{Diagramme de cas d'utilisation de GETDO}
     \label{fig:GETDO_UseCaseDiagramm}
 \end{figure}
+%---
 
-% usecase diagramm 
-\subsubsection*{Description textuelle de cas d'utilisation}
-Système: Système de gestion de tâches
-Acteurs:
+% usecase diagramm description
+\textbf{Système:} Système de gestion de tâches\\
+\textbf{Acteurs:}
 \begin{itemize}
-    \item[•]Utilisateur: Utilise le système pour créer, gérer et suivre ses tâches.
-    \item[•]Administrateur: Gère les utilisateurs, les paramètres du système et les rapports.
+    \item Utilisateur: Utilise le système pour créer, gérer et suivre ses tâches.
+    \item Administrateur: Gère les utilisateurs, les paramètres du système et les rapports.
 \end{itemize}
-Cas d'utilisation:
+\textbf{Cas d'utilisation:}
 \begin{itemize}
-    \item[•]Connexion/Inscription: L'utilisateur se connecte ou crée un compte.
-    \item[•]Gestion des tâches:
+    \item Connexion/Inscription: L'utilisateur se connecte ou crée un compte.
+    \item Gestion des tâches:
         L'utilisateur crée, modifie, supprime et organise ses tâches.
-    \item[•]Statistiques des tâches: L'utilisateur génère des rapports (tâches terminées, temps passé, tâches en retard).
-    \item[•] •Notifications: L'utilisateur consulte les notifications envoyer par l'administrateur
+    \item Statistiques des tâches: L'utilisateur génère des rapports (tâches terminées, temps passé, tâches en retard).
+    \item Notifications: L'utilisateur consulte les notifications envoyer par l'administrateur
 \end{itemize}
-Relations:
+\textbf{Relations:}
 \begin{itemize}
-    \item[•]Utilisateur: Peut utiliser tous les cas d'utilisation.
-    \item[•]Administrateur: Peut envoyer des notifications a l'utilisateur.
-    \item[•]Gestion des tâches: Inclut les notifications.
-    \item[•]Statistiques des tâches: Étend la gestion des tâches.
+    \item Utilisateur: Peut utiliser tous les cas d'utilisation.
+    \item Administrateur: Peut envoyer des notifications a l'utilisateur.
+    \item Gestion des tâches: Inclut les notifications.
+    \item Statistiques des tâches: Étend la gestion des tâches.
 \end{itemize}
+
+\subsubsection{Senario de cas d'utilisation}
+
+\textbf{Scénario utilisateur:} Création d'une tâche\\
+\textbf{Acteur:} Utilisateur\\
+\textbf{Cas d'utilisation:} Gestion des tâches\\
+\textbf{Objectif:} Créer une nouvelle tâche dans le système.\\
+
+\textbf{Étapes:}
+\begin{itemize}
+    \item L'utilisateur se connecte au système en utilisant son nom d'utilisateur et son mot de passe.
+    \item L'utilisateur sélectionne l'option "Créer une tâche" dans le menu principal.
+    \item L'utilisateur entre le titre de la tâche, une description détaillée, la date d'échéance et la priorité de la tâche.
+    \item L'utilisateur clique sur le bouton "Enregistrer" pour créer la tâche.
+    \item Le système enregistre la tâche et affiche un message de confirmation.
+    \item L'utilisateur peut ensuite visualiser la tâche dans sa liste de tâches ou dans son calendrier.
+\end{itemize}
+\textbf{Variations:}
+    L'utilisateur peut définir une date de rappel pour la tâche.
+\textbf{Résultat:}
+    Une nouvelle tâche est créée dans le système et est visible pour l'utilisateur qui l'a créée et pour les utilisatePlaurs auxquels elle a été attribuée.\\
+%---
+
+% Use case plot
+\textbf{Scénario utilisateur:} Modification d'une tâche\\
+\textbf{Acteur:} Utilisateur\\
+\textbf{Cas d'utilisation:} Gestion des tâches\\
+\textbf{Objectif:} Modifier une tâche existante dans le système.\\
+\textbf{Étapes:}
+\begin{itemize}
+    \item L'utilisateur se connecte au système en utilisant son nom d'utilisateur et son mot de passe.
+    \item L'utilisateur sélectionne la tâche qu'il souhaite modifier dans sa liste de tâches ou dans son calendrier.
+    \item L'utilisateur modifie les informations de la tâche, telles que le titre, la description, la date d'échéance, la priorité, les étiquettes, les pièces jointes et les commentaires.
+    \item L'utilisateur clique sur le bouton "Enregistrer" pour enregistrer les modifications.
+    \item Le système enregistre les modifications et affiche un message de confirmation.
+    \item Les modifications de la tâche sont reflétées dans la liste des tâches de l'utilisateur et dans le calendrier.
+\end{itemize}
+Variations:
+\begin{itemize}
+    \item L'utilisateur peut modifier l'état de la tâche, par exemple de "En cours" à "Terminée".
+    \item L'utilisateur peut modifier la date de rappel de la tâche.
+\end{itemize}
+\textbf{Résultat:}
+    La tâche est modifiée dans le système et les modifications sont reflétées pour tous les utilisateurs qui peuvent voir la tâche.\\
+
+\textbf{Scénario utilisateur:} Suppression d'une tâche\\
+\textbf{Acteur:} Utilisateur\\
+\textbf{Cas d'utilisation:} Gestion des tâches\\
+\textbf{Objectif:} Supprimer une tâche existante du système.\\
+\textbf{Étapes:}
+\begin{itemize}
+    \item L'utilisateur se connecte au système en utilisant son nom d'utilisateur et son mot de passe.
+    \item L'utilisateur sélectionne la tâche qu'il souhaite supprimer dans sa liste de tâches ou dans son calendrier.
+    \item L'utilisateur clique sur le bouton "Supprimer" pour supprimer la tâche.
+    \item Le système affiche une confirmation demandant à l'utilisateur de confirmer la suppression.
+    \item L'utilisateur clique sur le bouton "Confirmer" pour supprimer définitivement la tâche.
+    \item Le système supprime la tâche et affiche un message de confirmation.
+\end{itemize}
+Résultat:
+    La tâche est supprimée du système et n'est plus visible pour les utilisateurs.
+%---
+
+\subsection{Identité visuelle du project}
+L'identité visuelle est l'élément crucial qui donne vie à la personnalité et aux valeurs d'un projet. Elle constitue la première impression que les utilisateurs auront de votre application et joue un rôle essentiel dans la création d'une expérience utilisateur cohérente et engageante.
+
+Cette section du plan de projet s'attache à définir les principes fondamentaux qui guideront la création de l'identité visuelle de l'application. Elle couvrira les aspects suivants :
+
+\begin{itemize}
+  \item \textbf{Logo et charte graphique:} Définir les éléments visuels clés qui représentent l'identité de l'application, tels que le logo, la palette de couleurs, la typographie et les images.
+  
+  \item \textbf {Directives de style:} Établir des règles claires et cohérentes pour l'utilisation de l'identité visuelle dans tous les supports de communication, y compris l'interface utilisateur, les documents marketing et les supports promotionnels.
+\end{itemize}
+\subsubsection{Logo et charte graphique}
+Le logo et la charte graphique sont les piliers fondamentaux de l'identité visuelle d'un projet. Ils constituent la représentation visuelle de la marque et jouent un rôle crucial dans la communication des valeurs, de la mission et de la personnalité du projet auprès du public cible.
 
 
 \end{document}
