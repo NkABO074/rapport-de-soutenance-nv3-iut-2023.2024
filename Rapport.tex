@@ -37,11 +37,11 @@
 % Where the title will be.
 \maketitle
 
-% Where the table of contents will be.
-\tableofcontents
+% definition
+\def\chaptername{Chapitre}% definie le titre du chapitre en FR
+\def\listfigurename{Liste des figures}
+\def\contentsname{Somaire}
 
-% definie le titre du chapitre en FR
-\def\chaptername{Chapitre} 
 
 \renewcommand{\abstractname}{Dedicace}
 \begin{abstract}
@@ -72,6 +72,8 @@ Je remercie également
 À vous tous, merci infiniment.
 \end{abstract}
 
+% Where the table of contents will be.
+\tableofcontents
 
 \renewcommand{\abstractname}{Résumé}
 \begin{abstract}
@@ -81,6 +83,9 @@ Le développement de l'application s'est appuyé sur des technologies modernes t
 Ce rapport décrit en détail le processus de conception, de développement et de test de l'application, ainsi que les défis rencontrés et les solutions apportées. En outre, il met en évidence les perspectives d'amélioration et les pistes pour de futures recherches et développements dans le domaine de la gestion de tâches et des possibilité de l'intégration de l'Intelligence Artificielle.
 En conclusion, l'application GETDO représente une contribution significative dans le domaine de la gestion de tâches, offrant aux utilisateurs une solution moderne et efficace pour gérer leur travail et améliorer leur productivité au quotidien.
 \end{abstract}
+
+% liste des figures
+\listoffigures
 
 % Introduction générale
 \chapter*{Introduction Générale}
@@ -246,10 +251,24 @@ Cette section du plan de projet s'attache à définir les principes fondamentaux
 \subsubsection{Logo et charte graphique}
 Le logo et la charte graphique sont les piliers fondamentaux de l'identité visuelle d'un projet. Ils constituent la représentation visuelle de la marque et jouent un rôle crucial dans la communication des valeurs, de la mission et de la personnalité du projet auprès du public cible.
 
+% GETDO logo
 \begin{figure}[h!]
     \includegraphics[width=1\textwidth]{./images/GETDO_logo.png}
-    \caption{Logo de GETDO......}
+    \caption{Logo de GETDO}
     \label{fig:jira_project_task}
 \end{figure}
+
+\subsubsection{Directive de style}
+Dans le cadre de l'implémentation de notre application web, il est essentiel d'adopter une approche cohérente et structurée. Cette section présente les directives de style que nous avons suivies tout au long du projet. Ces règles visent à assurer une expérience utilisateur optimale. En suivant ces directives, nous avons pu créer, répondant aux besoins des utilisateurs tout en respectant les meilleures pratiques de développement web.
+\begin{itemize}
+  \item\textbf{Palette de couleur}:
+  \begin{figure}[h!]
+    \includegraphics[width=1\textwidth]{./images/getdo-color-palette.png}
+    \caption{Palette de couleur}
+    \label{fig:jira_project_task}
+  \end{figure}
+
+\end{itemize}
+
 
 \end{document}
