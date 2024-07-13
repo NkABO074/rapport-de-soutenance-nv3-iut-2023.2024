@@ -19,6 +19,7 @@
 % https://coolors.co/
 % https://app.diagrams.net/
 % https://vuefire.vuejs.org/
+% https://www.overleaf.com/
 
 \title{Implémentation d'une application de gestion de tache}
 %\author{NKWE AHOUME BORIS}
@@ -283,6 +284,14 @@ composants.
 Le backend d'une application est essentiel pour gérer les données, l'authentification et la logique métier qui soutiennent le fonctionnement de l'interface utilisateur. Dans notre projet, nous avons choisi Firebase comme solution backend, qui offre une gamme complète de services intégrés pour simplifier le développement. Nous nous pancheront sur les principaux composants du backend, y compris l'authentification des utilisateurs et les bases de données en expliquant comment ils interagissent pour garantir la sécurité, la scalabilité et la performance de l'application. Grâce à Firebase, nous avons pu tirer parti d'une architecture serverless, permettant ainsi une intégration efficace et rapide des fonctionnalités nécessaires à notre projet.
 
 \subsubsection{Présentation Générale de Firebase}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/firebase.png}
+  \caption{firebase}
+  \label{fig:Firebase}
+\end{figure}
+
 Firebase est une plateforme complète qui fournit tout ce dont vous avez besoin pour créer, développer et gérer des applications mobiles et web performantes.
 Avec ses outils puissants et faciles à utiliser, Firebase permet aux développeurs de gagner du temps et de se concentrer sur la création de fonctionnalités innovantes plutôt que sur la gestion de l'infrastructure sous-jacente. Firebase, dispose des fonctionalité suivante:
 \begin{itemize}
@@ -295,6 +304,21 @@ Avec ses outils puissants et faciles à utiliser, Firebase permet aux développe
 \end{itemize}
 
 \subsubsection{Interaction frontend-backend}
+L'interaction entre le frontend et le backend est cruciale pour les applications web modernes. Dans notre projet, nous utilisons Vue.js pour le frontend et Firebase pour le backend. Vue.js permet de créer des interfaces utilisateur interactives et performantes, tandis que Firebase offre une solution complète incluant l'authentification, la gestion de bases de données en temps réel, et le stockage. Les details d'intéraction se feront comme illustré si desous:
+\begin{figure}[h!]
+    \includegraphics[width=1\textwidth]{./images/backfront-interaction.png}
+    \caption{Interaction frontend-backend}
+    \label{fig:jira_project_task}
+    \end{figure}
+\begin{itemize}
+  \item \textbf{Utilisateur à Vue.js} : L'utilisateur interagit avec l'interface Vue.js.
+  \item \textbf{Vue.js à Firebase Authentication} : Vue.js envoie des requêtes d'authentification pour vérifier l'utilisateur.
+  \item \textbf{Firebase Authentication à Vue.js} : Firebase Authentication renvoie un token d'authentification.
+  \item \textbf{Vue.js à Firebase Database} : Vue.js envoie des requêtes CRUD (Create, Read, Update, Delete) à la base de données Firebase.
+  \item \textbf{Firebase Database à Vue.js} : Firebase Database renvoie les réponses des opérations CRUD.
+  \item \textbf{Vue.js à Utilisateur} : Vue.js met à jour l'interface utilisateur avec les données reçues.
+\end{itemize}
+
 
 \subsection{Identité visuelle du project}
 L'identité visuelle est l'élément crucial qui donne vie à la personnalité et aux valeurs d'un projet. Elle constitue la première impression que les utilisateurs auront de votre application et joue un rôle essentiel dans la création d'une expérience utilisateur cohérente et engageante.
@@ -358,4 +382,39 @@ Dans le cadre de l'implémentation de notre application web, il est essentiel d'
     \item\textbf{Red(FF0000)}: Pour les tâches urgente.
   \end{itemize}
 
+  \chapter{Analyse des resultats}
+  Dans ce chapitre, nous nous pencherons sur l'analyse des résultats obtenus suite à l'implémentation de notre application de gestion de tâches. Cette phase d'analyse est cruciale pour évaluer l'efficacité, la performance et la convivialité de l'application, ainsi que pour identifier les éventuels axes d'amélioration.
+  Nous commencerons par examiner les objectifs initiaux du projet et comparerons ces objectifs avec les résultats atteints. Cela nous permettra de déterminer dans quelle mesure les attentes ont été satisfaites et d'évaluer l'impact réel de l'application sur la gestion des tâches.
+  Enfin, nous explorerons les avantages et les limitations de l'utilisation de Vue.js et Firebase dans le contexte de ce projet. Cette section fournira un retour d'expérience précieux sur le choix de ces technologies pour le développement de l'application.
+  
+  \section{Évaluation des Objectifs Initiaux}
+    \subsection{Objectifs du Projet}
+    L'objectif principal de notre projet était de développer une application de gestion de tâches, nommée GETDO, qui offre une expérience utilisateur intuitive et efficace pour la gestion quotidienne des tâches. Pour atteindre cet objectif, nous avons défini plusieurs fonctionnalités clés que l'application devait intégrer.
+    
+    \begin{itemize}
+    
+    \item \textbf{Création de Tâche}
+    L'une des fonctionnalités fondamentales de GETDO est la création de tâches. L'application devait permettre aux utilisateurs de créer des tâches rapidement et facilement, en fournissant des options pour définir des titres, des descriptions, des dates d'échéance, des priorités et des catégories. Cette fonctionnalité vise à aider les utilisateurs à organiser et prioriser leurs tâches de manière claire et structurée.
+
+    \item \textbf{Vision Board}
+    Le Vision Board est une fonctionnalité innovante de GETDO qui permet aux utilisateurs de visualiser leurs tâches sous forme de tableaux interactifs. Cette vue visuelle aide les utilisateurs à obtenir une perspective globale de leurs tâches, à organiser leurs projets de manière visuelle et à suivre l'avancement de leurs objectifs à long terme. Le Vision Board devait offrir une interface glisser-déposer intuitive pour faciliter la gestion des tâches.
+
+    \item \textbf{Tableaux de Bord et Visualisations de Données}
+    Pour fournir une vue d'ensemble complète et analytique de la gestion des tâches, GETDO devait intégrer des tableaux de bord et des visualisations de données. Cette fonctionnalité permet aux utilisateurs de visualiser leurs performances, de suivre le progrès de leurs tâches et de générer des rapports. Les tableaux de bord devaient inclure des graphiques et des statistiques sur les tâches accomplies, en cours et en retard, offrant ainsi une vision claire de la productivité des utilisateurs.
+
+    \item \textbf{Prise en Charge de Styles de Gestion des Tâches}
+    GETDO devait offrir une flexibilité dans la gestion des tâches en prenant en charge différents styles de gestion. Les utilisateurs pouvaient choisir entre plusieurs méthodes de gestion des tâches, telles que le Kanban, la méthode GTD (Getting Things Done) ou des listes de tâches traditionnelles. Cette flexibilité permet aux utilisateurs d'adopter le style de gestion qui correspond le mieux à leurs besoins et préférences.
+    
+    \end{itemize}
+
+  
+Ces fonctionnalités clés définissaient les objectifs initiaux de notre projet, visant à créer une application de gestion de tâches complète, flexible et adaptée à divers styles de gestion. En atteignant ces objectifs, nous souhaitions offrir une solution qui améliore la productivité et l'organisation des utilisateurs dans leur vie quotidienne et professionnelle.
+    \subsection{Résultats Atteints}
+    \subsection{Analyse des Écarts}
+  \section{Avantages et Limitations des Technologies Utilisées}
+    \subsection{Avantages de Vue.js}
+    \subsection{Avantages de Firebase}
+    \subsection{Limitations de Vue.js et Firebase}
+  \section{Perspective d'amelioration}
+  
 \end{document}
