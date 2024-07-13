@@ -32,7 +32,6 @@
 
 \begin{document}
 
-\vspace{0.06cm}
 
 % Where the title will be.
 \maketitle
@@ -117,6 +116,8 @@ FAROTY a un impact positif sur les Camerounais en leur offrant un accès plus fa
 
 Pour mener à bien ce projet, plusieurs outils technologiques ont été utilisés. Voici les principaux :
 \begin{itemize}
+\item\textbf{Logiciel de design:} Lunacy
+\item\textbf{Logiciel de modelisation:} draw.io
 \item\textbf{IDE}: Visual Studio Code est l'editeur de choix pour notre project.
 \item\textbf{Syteme de controle de version}: Git et Github.
 \item\textbf{Langages de Programmation et technologie}: JavaScript pour front-end(Vue.JS) et FireBase en back-end.
@@ -238,6 +239,46 @@ Résultat:
     La tâche est supprimée du système et n'est plus visible pour les utilisateurs.
 %---
 
+% Application architecture
+\subsection{Architecture de l'application}
+L'architecture d'une application est cruciale pour assurer sa performance, sa maintenabilité et son évolutivité. Dans le cadre de notre projet, nous avons choisi d'utiliser \textbf{Vue.js} comme framework frontend et \textbf{Firebase} comme solution backend. Cette combinaison, offre une approche modulaire et efficace permettant de répondre rapidement aux besoins des utilisateurs tout en garantissant une intégration fluide des différentes fonctionnalités. Dans cette, section nous allons détailler les composants clés de l'architecture de l'application ainsi que les interactions entre le frontend et le backend, afin de mieux comprendre les choix techniques effectués et leur impact sur le développement global du.
+
+\subsubsection{frontend}
+Le frontend d'une application constitue l'interface, utilisateur celle par laquelle les utilisateurs interagissent directement avec les fonctionnalités. proposées Dans notre, projet nous avons opté pour.Vue, js un framework JavaScript reconnu pour sa flexibilité et sa capacité à créer des interfaces dynamiques et. réactives Cette section explore les principaux composants du, frontend y compris la structure des
+composants.
+
+\textbf{Liste des vues:}
+\begin{itemize}
+    \item\textbf{vue d accueil:} LandingVue
+    \item\textbf{ Vue'd inscription:} InscriptionVue
+    \item\textbf{ Vue de connection:} ConnectionVue
+    \item\textbf{ vue des tâches:} HomeVue
+    \item\textbf{ vue du vision bord:} VisionBordVue
+    \item\textbf{ vue du calendrier:} CalendarVue
+    \item\textbf{ vue du dashbord:} DashbordVue
+\end{itemize}
+    
+\textbf{Liste des composants:}
+   \begin{itemize}
+    \item HeaderComponent
+    \item TaskComponent
+    \item VisionComponent
+   \end{itemize}
+    
+\textbf{Structure La structure du frontend de l'application:} 
+  % application Use case diagramm
+  \begin{figure}[h!]
+      \includegraphics[width=1\textwidth]{./images/getdo_structure_vue.drawio.png}
+      \caption{Structure des vues de'l}
+      \label{fig:GETDO_UseCaseDiagramm}
+  \end{figure}
+% ---
+
+\subsubsection{Backend}
+Le backend d'une application est essentiel pour gérer les données, l'authentification et la logique métier qui soutiennent le fonctionnement de l'interface utilisateur. Dans notre projet, nous avons choisi Firebase comme solution backend, qui offre une gamme complète de services intégrés pour simplifier le développement. Nous nous pancheront sur les principaux composants du backend, y compris l'authentification des utilisateurs et les bases de données en expliquant comment ils interagissent pour garantir la sécurité, la scalabilité et la performance de l'application. Grâce à Firebase, nous avons pu tirer parti d'une architecture serverless, permettant ainsi une intégration efficace et rapide des fonctionnalités nécessaires à notre projet.
+
+
+
 \subsection{Identité visuelle du project}
 L'identité visuelle est l'élément crucial qui donne vie à la personnalité et aux valeurs d'un projet. Elle constitue la première impression que les utilisateurs auront de votre application et joue un rôle essentiel dans la création d'une expérience utilisateur cohérente et engageante.
 
@@ -266,16 +307,16 @@ Dans le cadre de l'implémentation de notre application web, il est essentiel d'
   \item\textbf{Palette de couleur principale}:
   \begin{figure}[h!]
     \includegraphics[width=1\textwidth]{./images/getdo-color-palette.png}
-    \caption{Palette de couleur}
+    \caption{Palette de couleur principale}
     \label{fig:jira_project_task}
-  \end{figure}\\ \\
+  \end{figure}\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
   %---
- Parmit les couleurs retenue pour le design de l'application nous avons:
+ De gauche a droite nous avons:
   \begin{itemize}
     \item\textbf{Indian red(DB5461)}: Uiliser comme couleur principale de l'application
     \item\textbf{Black(000000)}:Couleur des zone de texte en mode sombre et du texte en mode claire.
     \item\textbf{Eerie black(252525)}:Couleur des espaces dans les boites de dialogue.
-    \item\textbf{Jet(303030)}:Couleur des boites de dialogue (en mode sombre)
+    \item\textbf{gauche a droite nous avons:Jet(303030)}:Couleur des boites de dialogue (en mode sombre)
     \item\textbf{Black olive(46463C)}:Couleur d'arrière plan (en mode sombre)
     \item\textbf{Grey(757575)}:Couleur des liens
     \item\textbf{Anti-flash white(EEEEEE)}:Couleur des boites de dialogue (en mode clair)
@@ -283,7 +324,21 @@ Dans le cadre de l'implémentation de notre application web, il est essentiel d'
     \item\textbf{White(FFFFFF)}:Couleur des zone de texte en mode claire et du texte en mode sombre.
   \end{itemize}
   
-\end{itemize}
-
+  \item\textbf{palette de couleur secondaire}: Celle ci sera utiliser pour les indicateurs de niveaux d'importance des tâches
+  % palette de couleur secondaire
+  \begin{figure}[h!]
+    \includegraphics[width=1\textwidth]{./images/getdo-color-palette-indicator.png}
+    \caption{Palette de couleur secondaire}
+    \label{fig:jira_project_task}
+  \end{figure}\\ \\ \\
+  %---
+  \end{itemize}
+  De gauche a droite nous avons:
+  \begin{itemize}
+    \item\textbf{Office green(088000)}: Pour les tâches de moindre importance.
+    \item\textbf{Harvest gold(DE9400)}: Pour les tâches d'importance faible.
+    \item\textbf{Aerospace orange(FF4D00)}: Pour les tâches importante.
+    \item\textbf{Red(FF0000)}: Pour les tâches urgente.
+  \end{itemize}
 
 \end{document}
