@@ -13,7 +13,12 @@
 \usepackage{textcomp}
 \usepackage{parskip}
 
-
+% source:
+% https://blog.visual-paradigm.com/fr/the-four-types-of-relationship-in-use-case-diagram/
+% https://firebase.google.com/
+% https://coolors.co/
+% https://app.diagrams.net/
+% https://vuefire.vuejs.org/
 
 \title{Implémentation d'une application de gestion de tache}
 %\author{NKWE AHOUME BORIS}
@@ -262,7 +267,7 @@ composants.
    \begin{itemize}
     \item HeaderComponent
     \item TaskComponent
-    \item VisionComponent
+    \item VisionComponent\\ \\
    \end{itemize}
     
 \textbf{Structure La structure du frontend de l'application:} 
@@ -277,7 +282,19 @@ composants.
 \subsubsection{Backend}
 Le backend d'une application est essentiel pour gérer les données, l'authentification et la logique métier qui soutiennent le fonctionnement de l'interface utilisateur. Dans notre projet, nous avons choisi Firebase comme solution backend, qui offre une gamme complète de services intégrés pour simplifier le développement. Nous nous pancheront sur les principaux composants du backend, y compris l'authentification des utilisateurs et les bases de données en expliquant comment ils interagissent pour garantir la sécurité, la scalabilité et la performance de l'application. Grâce à Firebase, nous avons pu tirer parti d'une architecture serverless, permettant ainsi une intégration efficace et rapide des fonctionnalités nécessaires à notre projet.
 
+\subsubsection{Présentation Générale de Firebase}
+Firebase est une plateforme complète qui fournit tout ce dont vous avez besoin pour créer, développer et gérer des applications mobiles et web performantes.
+Avec ses outils puissants et faciles à utiliser, Firebase permet aux développeurs de gagner du temps et de se concentrer sur la création de fonctionnalités innovantes plutôt que sur la gestion de l'infrastructure sous-jacente. Firebase, dispose des fonctionalité suivante:
+\begin{itemize}
+  \item Authentification : Gérer les connexions des utilisateurs et fournir un accès sécurisé aux données
+  \item Bases de données : Stocker et gérer des données structurées et non structurées
+  \item Stockage : Stocker et gérer des fichiers tels que des images, des vidéos et des documents
+  \item Fonctions cloud : Exécuter du code sans serveur en réponse à des événements
+  \item Notifications push : Envoyer des notifications aux utilisateurs sur leurs appareils
+  \item Analyse : Suivre les performances de l'application et le comportement des utilisateurs
+\end{itemize}
 
+\subsubsection{Interaction frontend-backend}
 
 \subsection{Identité visuelle du project}
 L'identité visuelle est l'élément crucial qui donne vie à la personnalité et aux valeurs d'un projet. Elle constitue la première impression que les utilisateurs auront de votre application et joue un rôle essentiel dans la création d'une expérience utilisateur cohérente et engageante.
