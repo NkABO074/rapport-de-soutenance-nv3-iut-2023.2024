@@ -13,6 +13,7 @@
 \usepackage{textcomp}
 \usepackage{parskip}
 \usepackage{setspace}
+\usepackage{hyperref}
 
 % source:
 % https://blog.visual-paradigm.com/fr/the-four-types-of-relationship-in-use-case-diagram/
@@ -38,7 +39,7 @@
 
 \date{\today}
 
-\setstretch{1.5}
+\setstretch{1.5} % interline
 
 \begin{document}
 
@@ -62,11 +63,12 @@ Je souhaite exprimer ma profonde gratitude à toutes les personnes qui ont contr
 Je tiens à remercier chaleureusement:
 
 \begin{itemize}
-  \item[•] le Directeur de l'Université pour le soutien institutionnel et les opportunités académiques offertes tout au long de mon parcours. Mes remerciements vont également au Responsable Académique, dont les conseils avisés et le dévouement ont été précieux.
-  \item[•] mes parents, pour leur amour inconditionnel, leur soutien moral et financier, et leurs encouragements constants qui ont été une source inestimable de motivation.
-  \item[•] mes frères et sœurs, je suis reconnaissant pour leur soutien affectueux et leur compréhension durant les moments difficiles.
-  \item[•] mon Encadreur Professionnel M. HANNIEL TSASSE, dont l'expertise et les conseils pratiques m'ont guidé tout au long de cette recherche. 
-  \item[•]Mon Encadreur Académique M. FOKOU KEMEGNE mérite aussi une reconnaissance particulière pour son accompagnement pédagogique, sa patience et ses précieux conseils.
+  \item le Directeur de l'Institue Universitaire de technologie de Douala pour le soutien institutionnel et les opportunités académiques offertes tout au long de mon parcours. Mes remerciements vont également au 
+  \item Responsable Académique M. MBAI, dont les conseils avisés et le dévouement ont été précieux.
+  \item Mes parents, pour leur amour inconditionnel, leur soutien moral et financier, et leurs encouragements constants qui ont été une source inestimable de motivation.
+  \item Mes frères et sœurs, je suis reconnaissant pour leur soutien affectueux et leur compréhension durant les moments difficiles.
+  \item Mon Encadreur Professionnel M. HANNIEL TSASSE, dont l'expertise et les conseils pratiques m'ont guidé tout au long de cette recherche. 
+  \item Mon Encadreur Académique M. FOKOU KEMEGNE mérite aussi une reconnaissance particulière pour son accompagnement pédagogique, sa patience et ses précieux conseils.
 \end{itemize}
 
 Un grand merci à 
@@ -109,13 +111,13 @@ Enfin, nous discuterons des perspectives d'avenir pour notre application, en ide
 FAROTY SAS est une société camerounaise innovante qui offre des solutions financières numériques à une clientèle grandissante. Localiser a près de l’hôtel Kremlin a Bonamousadi, FAROTY a pour mission de faciliter l'accès aux services financiers de base pour tous les Camerounais, en particulier ceux des zones rurales et non bancarisées.
 FAROTY propose une suite complète de solutions financières numériques, notamment :
 \begin{itemize}
-\item[•] Paiements et transferts d'argent : Envoyez et recevez de l'argent facilement et en toute sécurité via des plateformes de paiement mobile et électronique (Orange Money, MTN Mobile Money, PayPal). 
-\item[•] Gestion financière personnelle : Gérez vos finances personnelles en toute simplicité avec nos outils de budgétisation, de suivi des dépenses et d'épargne. 
-\item[•] Collecte de fonds (Crowdfunding) : Levez des fonds pour vos projets et causes grâce à notre plateforme de crowdfunding sécurisée. 
-\item[•] Tontines digitales : Participez à des tontines virtuelles et gérez vos cotisations en ligne. 
-\item[•] Billetterie électronique : Achetez et vendez des billets d'événements en ligne avec notre service ePass. 
-\item[•] Pages commerciales : Créez votre propre boutique en ligne et vendez vos produits et services facilement. 
-Leurs technologie
+  \item[•] Paiements et transferts d'argent : Envoyez et recevez de l'argent facilement et en toute sécurité via des plateformes de paiement mobile et électronique (Orange Money, MTN Mobile Money, PayPal). 
+  \item[•] Gestion financière personnelle : Gérez vos finances personnelles en toute simplicité avec nos outils de budgétisation, de suivi des dépenses et d'épargne. 
+  \item[•] Collecte de fonds (Crowdfunding) : Levez des fonds pour vos projets et causes grâce à notre plateforme de crowdfunding sécurisée. 
+  \item[•] Tontines digitales : Participez à des tontines virtuelles et gérez vos cotisations en ligne. 
+  \item[•] Billetterie électronique : Achetez et vendez des billets d'événements en ligne avec notre service ePass. 
+  \item[•] Pages commerciales : Créez votre propre boutique en ligne et vendez vos produits et services facilement. 
+  Leurs technologie
 \end{itemize} 
 FAROTY a un impact positif sur les Camerounais en leur offrant un accès plus facile aux services financiers il est donc de notre devoir de facilité leurs travails via l'application présenter dans ce rapport
 
@@ -125,11 +127,11 @@ FAROTY a un impact positif sur les Camerounais en leur offrant un accès plus fa
 
 Pour mener à bien ce projet, plusieurs outils technologiques ont été utilisés. Voici les principaux :
 \begin{itemize}
-\item\textbf{Logiciel de design:} Lunacy
-\item\textbf{Logiciel de modelisation:} draw.io
-\item\textbf{IDE}: Visual Studio Code est l'editeur de choix pour notre project.
-\item\textbf{Syteme de controle de version}: Git et Github.
-\item\textbf{Langages de Programmation et technologie}: JavaScript pour front-end(Vue.JS) et FireBase en back-end.
+  \item\textbf{Logiciel de design:} Lunacy
+  \item\textbf{Logiciel de modelisation:} draw.io
+  \item\textbf{IDE}: Visual Studio Code est l'editeur de choix pour notre project.
+  \item\textbf{Syteme de controle de version}: Git et Github.
+  \item\textbf{Langages de Programmation et technologie}: JavaScript pour front-end(Vue.JS) et FireBase en back-end.
 \end{itemize}
 
 \section{Méthode utilisé}
@@ -499,7 +501,98 @@ Ces fonctionnalités clés définissaient les objectifs initiaux de notre projet
     \end{itemize}
     
     \subsection{Avantages de Firebase}
+    Firebase, choisi comme backend pour le développement de l'application GETDO, offre une gamme complète de services intégrés qui ont grandement facilité la mise en œuvre du projet. Voici les principaux avantages de l'utilisation de Firebase :
+    \begin{itemize}
+      \item\textbf{Solution Tout-en-Un:}
+      Firebase fournit une suite complète de services backend, incluant la base de données en temps réel (Firestore), l'authentification des utilisateurs, le stockage de fichiers, les fonctions cloud, et bien plus. Cette solution tout-en-un a permis de centraliser les besoins backend en un seul service, simplifiant ainsi le développement et la gestion de l'application.
+      
+      \item\textbf{Authentification Facile et Sécurisée:}
+      Firebase Authentication offre des options simples et sécurisées pour la gestion des utilisateurs, incluant l'authentification par email/mot de passe, l'authentification via des fournisseurs tiers (Google, Facebook, etc.), et la gestion des sessions utilisateur. Cela a permis d'implémenter rapidement des fonctionnalités d'authentification robustes et sécurisées.
+
+      \item\textbf{Fonctionnalités Serverless:}
+      Avec Firebase Cloud Functions, il est possible de déployer des fonctions serverless qui réagissent aux événements de la base de données, aux requêtes HTTP, et plus encore. Cette capacité a permis d'implémenter des logiques métiers complexes de manière flexible et évolutive sans avoir à gérer des serveurs dédiés.
+      
+      \item\textbf{Facilité d'Intégration et Documentation Complète:}
+      Firebase dispose d'une documentation exhaustive et d'un support de qualité, facilitant l'intégration rapide des services dans l'application. Cette documentation a été particulièrement utile pour résoudre les problèmes techniques et implémenter les fonctionnalités avancées de manière efficace.
+      
+    \end{itemize}
+    
     \subsection{Limitations de Vue.js et Firebase}
+
+    \subsubsection{Limitations de Vue.js}
+    Bien que Vue.js présente de nombreux avantages, certaines limitations ont été rencontrées au  cours du développement de l'application GETDO :
+    Courbe d'Apprentissage pour les Concepts Avancés
+
+    \begin{itemize}
+      \item\textbf{Complexité Croissante :} Bien que Vue.js soit facile à apprendre pour les débutants, la maîtrise des concepts avancés comme Vuex (gestion d'état), les mixins, et les plugins peut être complexe et nécessiter un temps d'adaptation significatif.
+
+      \item\textbf{Fragmentation des Plugins :} L'écosystème de Vue.js évolue rapidement, ce qui peut entraîner des problèmes de compatibilité entre différentes versions des plugins et des bibliothèques. Cela nécessite une veille technologique constante et peut rendre la maintenance du projet plus difficile.
+
+      \item\textbf{Ralentissement :} Lorsqu'il s'agit de gérer des listes très longues ou des tableaux de données volumineux, Vue.js peut rencontrer des problèmes de performance, malgré l'optimisation du Virtual DOM. Des techniques avancées et des optimisations supplémentaires peuvent être nécessaires pour maintenir une interface fluide.
+     \end{itemize}
+     
+     \subsubsection{Limitations de Firebase}
+     Firebase, malgré ses nombreux atouts, présente également certaines limitations qui ont impacté le développement et l'utilisation de l'application GETDO :
+     \begin{itemize}
+     \item\textbf{Lock-in Technologique :} Firebase est une plateforme propriétaire de Google, ce qui signifie que les développeurs sont en grande partie liés à l'écosystème de Google. Migrer vers une autre solution backend peut être complexe et coûteux en termes de temps et de ressources.
+
+     \item\textbf{Modèle de Tarification :} Bien que Firebase propose une tarification gratuite pour les petits projets, les coûts peuvent rapidement augmenter avec l'échelle et l'usage intensif des services. Les fonctionnalités avancées et les requêtes fréquentes peuvent entraîner des frais importants, surtout pour les startups ou les projets à budget limité.
+
+     \item\textbf{Complexité des Requêtes :} Firestore, bien que puissant, peut rencontrer des limitations lors de la réalisation de requêtes complexes. Les développeurs doivent souvent trouver des solutions de contournement pour des opérations qui seraient triviales avec des bases de données relationnelles traditionnelles.
+
+     \item\textbf{Connexion en Temps Réel :} Firebase dépend d'une connexion Internet stable pour synchroniser les données en temps réel. Dans des environnements où la connectivité est limitée ou instable, cela peut poser des problèmes de synchronisation et d'accès aux données.
+
+     \item\textbf{Règles de Sécurité :} La configuration des règles de sécurité pour Firestore peut être complexe et sujette à des erreurs. Une mauvaise configuration peut entraîner des failles de sécurité potentielles, exposant les données des utilisateurs à des risques.
+     \end{itemize}
+    
   \section{Perspective d'amelioration}
-  
+    \subsubsection{Retour des Utilisateurs}
+      \begin{itemize}
+      \item\textbf{Feedback Utilisateur Continu :}Mettre en place des mécanismes pour recueillir régulièrement les retours des utilisateurs afin d'identifier les besoins émergents et les points de friction.
+      \item\textbf{Mise en Œuvre de Nouvelles Fonctionnalités :} Intégrer de nouvelles fonctionnalités basées sur les retours des utilisateurs, telles que des rappels par notification, des intégrations avec d'autres outils de productivité, ou des options de personnalisation avancées.
+      \item\textbf{Intégration du dashbord}: Lors de prochaine mise a jour nous incluront un tableau de visualisation des données
+    \end{itemize}
+    
+    \subsubsection{Amélioration de l'Expérience Utilisateur}
+    \begin{itemize}
+      \item\textbf{Refonte de l'interface: }Améliorer l'interface utilisateur pour la rendre plus intuitive et accessible, en tenant compte des meilleures pratiques de design UX.
+      \item\textbf{Accessibilité :} S'assurer que l'application est accessible à tous les utilisateurs, y compris ceux ayant des besoins spécifiques en matière d'accessibilité.
+    \end{itemize}
+    
+      \subsubsection{Technologies et Outils}
+    \begin{itemize}
+      \item\textbf{Alternatives Backend :} Évaluer d'autres solutions backend pour compléter ou remplacer certaines fonctionnalités de Firebase, en cas de besoin spécifique ou de contraintes de coût.
+      \item\textbf{Mises à Jour et Nouveautés :} Rester à jour avec les dernières versions de Vue.js et Firebase, ainsi que les nouvelles fonctionnalités et améliorations proposées par la communauté et les développeurs de ces technologies.
+    \end{itemize}
+    
+    \subsubsection{Intégration de l'inteligence Artificielle}
+    Grace a l'intégration de l'inteligence Artificielle, notre service aura la possibilité de simplifier la creation et gestion de tâche.
+    
+    En mettant en œuvre ces perspectives d'amélioration, nous visons à continuer à offrir une application de gestion de tâches performante, sécurisée et centrée sur l'utilisateur. Ces efforts contribueront à maintenir la satisfaction des utilisateurs et à assurer la croissance et l'évolution de GETDO dans un environnement technologique en constante évolution.
+    
+    \chapter*{Conclusion Générale}
+    % ---
+    En conclusion, ce rapport a détaillé l’ensemble du processus de développement de l’application de gestion de tâches GETDO, allant de la conception initiale à l’évaluation des résultats obtenus. L’objectif principal de ce projet était de créer une solution robuste et intuitive pour aider les utilisateurs à gérer leurs tâches personnelles et professionnelles de manière efficace.
+
+    Nous avons abordé les différentes phases de développement, en mettant en évidence les défis rencontrés et les solutions apportées. Le choix des technologies modernes telles que Vue.js pour le front-end et Firebase pour le back-end a permis de réaliser une application performante, réactive et sécurisée.
+
+    L’analyse des résultats a démontré que les objectifs initiaux du projet ont été atteints, voire dépassés dans certains aspects. L’application GETDO a prouvé son efficacité en termes de gestion de tâches, offrant une interface utilisateur conviviale et des fonctionnalités avancées telles que le Vision Board, les tableaux de bord et les visualisations de données.
+
+    Cependant, nous avons également identifié des limitations et des axes d’amélioration, notamment en ce qui concerne la scalabilité et la gestion des tâches complexes. Ces observations ouvrent des perspectives intéressantes pour des évolutions futures, notamment l’intégration de l’intelligence artificielle pour améliorer encore davantage l’expérience utilisateur et la productivité.
+
+    Enfin, ce projet a été une occasion précieuse d’acquérir des compétences pratiques en développement d’applications web et d’explorer les possibilités offertes par des technologies modernes. Nous espérons que ce travail pourra servir de base pour des projets futurs et contribuer à l’amélioration continue des outils de gestion de tâches.
+
+   \chapter*{Reference bibiographique}
+   \begin{itemize}
+     \item \url{https://blog.visual-paradigm.com/fr/}
+     \item \url{https://firebase.google.com/}
+     \item \url{https://coolors.co/}
+     \item \url{https://app.diagrams.net/}
+     \item \url{https://vuefire.vuejs.org/}
+     \item \url{https://www.overleaf.com/}
+     \item \url{https://www.latex-fr.net/}
+     \item \url{https://www.digitalocean.com/}
+   \end{itemize}
+    
+
 \end{document}
