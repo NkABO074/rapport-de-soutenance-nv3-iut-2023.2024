@@ -12,7 +12,7 @@
 \usepackage{url}
 \usepackage{textcomp}
 \usepackage{parskip}
-
+\usepackage{setspace}
 
 % source:
 % https://blog.visual-paradigm.com/fr/the-four-types-of-relationship-in-use-case-diagram/
@@ -37,6 +37,8 @@
 
 
 \date{\today}
+
+\setstretch{1.5}
 
 \begin{document}
 
@@ -411,10 +413,91 @@ Dans le cadre de l'implémentation de notre application web, il est essentiel d'
   
 Ces fonctionnalités clés définissaient les objectifs initiaux de notre projet, visant à créer une application de gestion de tâches complète, flexible et adaptée à divers styles de gestion. En atteignant ces objectifs, nous souhaitions offrir une solution qui améliore la productivité et l'organisation des utilisateurs dans leur vie quotidienne et professionnelle.
     \subsection{Résultats Atteints}
-    Cette sous-section présente une évaluation des résultats obtenus par rapport aux objectifs initiaux du projet. Nous analyserons les fonctionnalités implémentées et comparerons les résultats atteints avec les attentes définies. Cela nous permettra de mesurer le succès de notre application de gestion de tâches GETDO et de mettre en lumière les points forts ainsi que les aspects nécessitant des améliorations.
+    Cette sous-section présente une évaluation des résultats obtenus par rapport aux objectifs initiaux du projet. Nous analyserons les fonctionnalités implémentées et comparerons les résultats atteints avec les attentes définies. Cela nous permettra de mesurer le succès de notre application de gestion de tâches GETDO et de mettre en lumière les points forts ainsi que les aspects nécessitant des améliorations.\\ \\
+    
+    \begin{itemize}
+       
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_land.png}
+          \caption{Page d'accueil}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_inscription.png}
+          \caption{Page d'inscription}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_task_empty.png}
+          \caption{Page de visualisation de tâche(vide)}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_task_form.png}
+          \caption{Page de visualisation de tâche(formulaire de creation)}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_task.png}
+          \caption{Page de visualisation de tâche apres creation d'une tâche}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_task_finish.png}
+          \caption{Tâche apres qu'elle soit terminer}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_vision_empty.png}
+          \caption{Vision bord(vide)}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_vision_form.png}
+          \caption{Vision bord(formulaire de creation)}
+          \label{fig:jira_project_task}
+        \end{figure}
+        
+      
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_vision.png}
+          \caption{Vision bord(photo ajouter)}
+          \label{fig:jira_project_task}
+        \end{figure}
+         
+      \item[•]\begin{figure}[h!]
+          \includegraphics[width=1\textwidth]{./images/getdo_screenshot/getdo_vision_close.png}
+          \caption{Vue de plus raproché de la photo et objectif associer}
+          \label{fig:jira_project_task}
+        \end{figure}
+    \end{itemize}
     
   \section{Avantages et Limitations des Technologies Utilisées}
+  Dans cette sous-section, nous analyserons les avantages et les limitations des technologies choisies pour le développement de notre application de gestion de tâches, GETDO. L'utilisation de Vue.js pour le frontend et de Firebase pour le backend a offert de nombreux bénéfices, mais aussi posé certains défis. Nous évaluerons comment ces technologies ont contribué à la réalisation de nos objectifs et examinerons les contraintes rencontrées lors de leur mise en œuvre
     \subsection{Avantages de Vue.js}
+    Vue.js a été choisi pour le développement du frontend de notre application GETDO en raison de ses nombreux avantages. Voici les principaux bénéfices observés lors de son utilisation :
+    \begin{itemize}
+      \item\textbf{Facilité d'Apprentissage et d'Utilisation:}Vue.js est réputé pour sa courbe d'apprentissage douce, ce qui a permis à notre équipe de développement de se familiariser rapidement avec le framework. Sa documentation claire et exhaustive a également facilité l'intégration des nouvelles fonctionnalités et la résolution des problèmes rencontrés.
+      
+      \item\textbf{Performances et Optimisation:}Vue.js est optimisé pour offrir de bonnes performances grâce à son Virtual DOM et à son mécanisme de réactivité. Cela a permis à l'application GETDO de fonctionner de manière fluide, même avec un grand nombre de tâches à gérer, garantissant une expérience utilisateur agréable et sans ralentissement.
+      
+      \item\textbf{Support Actif et Communauté Vibrante:}
+      Vue.js bénéficie d'une communauté active et d'un support continu de la part de ses développeurs. Cette communauté dynamique a fourni de nombreuses ressources, plugins et solutions aux défis rencontrés, accélérant ainsi le développement et la résolution des problèmes.
+      
+      \item\textbf{Architecture Modulaire et Réactive:}
+      Vue.js offre une architecture réactive qui permet de créer des interfaces utilisateur dynamiques et interactives. Sa modularité a facilité la séparation des préoccupations, permettant de structurer l'application en composants réutilisables et maintenables. Cette approche a simplifié le développement et la maintenance de l'application.
+      
+      \item\textbf{Intégration Facile avec d'Autres Bibliothèques:}
+      L'écosystème de Vue.js est conçu pour s'intégrer facilement avec d'autres bibliothèques et outils, tels que Vuex pour la gestion de l'état et Vue Router pour la navigation. Cette flexibilité a permis une adaptation facile aux besoins spécifiques du projet et une extension des fonctionnalités de l'application sans complexité excessive.
+    \end{itemize}
+    
     \subsection{Avantages de Firebase}
     \subsection{Limitations de Vue.js et Firebase}
   \section{Perspective d'amelioration}

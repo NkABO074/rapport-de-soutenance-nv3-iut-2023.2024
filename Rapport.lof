@@ -1,11 +1,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Vue d'ensemble d'une tâche dans un projet Jira}}{6}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagramme de cas d'utilisation de GETDO}}{7}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Structure des vues de'l}}{11}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces firebase}}{12}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Interaction frontend-backend}}{13}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Logo de GETDO}}{14}{}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Palette de couleur principale}}{14}{}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Palette de couleur secondaire}}{16}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Vue d'ensemble d'une tâche dans un projet Jira}}{8}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagramme de cas d'utilisation de GETDO}}{9}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Structure des vues de'l}}{14}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces firebase}}{15}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Interaction frontend-backend}}{16}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Logo de GETDO}}{18}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Palette de couleur principale}}{18}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Palette de couleur secondaire}}{20}{}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Page d'accueil}}{24}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Page d'inscription}}{24}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Page de visualisation de tâche(vide)}}{25}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Page de visualisation de tâche(formulaire de creation)}}{25}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Page de visualisation de tâche apres creation d'une tâche}}{26}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Tâche apres qu'elle soit terminer}}{26}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Vision bord(vide)}}{27}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Vision bord(formulaire de creation)}}{27}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Vision bord(photo ajouter)}}{28}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Vue de plus raproché de la photo et objectif associer}}{28}{}%
